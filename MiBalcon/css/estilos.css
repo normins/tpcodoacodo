@@ -1,0 +1,342 @@
+/* Inicialización */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 62.5%;
+    /* font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Oxygen Mono', monospace;
+    font-family: 'Schoolbell', cursive; */
+}
+
+html {
+    background-color: #CCCCCC;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.5em;
+}
+
+/* ...........   Cabecera y menú    ..............*/
+header {
+    background-color:#0B6131;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 9rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-self: center; 
+}
+
+.nav-list-li{
+    margin: 10em;
+}
+
+.nav-list-li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12em;
+    color: white;
+    transition: .3s all;
+}
+
+.nav-list-li a:hover {
+    background-color:#94E0B6;
+    color: #40614F;
+    transform: scale(1.2);
+    display: block;
+    font-weight: bold;
+}
+
+    
+/* ...........   Título principal   ..............*/
+h1 {
+    text-align: center;
+    margin-bottom: 1px;
+    font-family: 'Oxygen Mono', monospace;
+    font-size: 3rem;
+}
+
+
+/* Principal */
+main {
+    padding-top: 15vh;
+}
+.main-contenedor{
+    margin-bottom: 0px;
+    text-align: center;
+}
+.main-texto{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 3rem;
+}
+
+
+/* ...........   Contacto - Formulario    ..............*/
+form {
+    background-color: #0B6131;
+    padding: 20px;
+    width: 55%;
+    margin: 0 auto 30px;
+    font-size: 2rem;
+    border-radius: 12px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1.6rem;
+    resize: none;
+}
+
+fieldset{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 1.6rem;
+    resize: none; 
+}
+
+.label-radio {
+    display: inline-block;
+    width: 15%;
+    padding-bottom: 10px ;
+}
+
+label,
+legend {
+    display: block;
+    color: #CCCCCC;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+::placeholder{
+    font-size: 1.1rem;
+}
+
+.iframe-mapa{
+    width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+}
+iframe{
+    width: 100%;
+    padding: 10px;
+    background-color: #0B6131;
+    border-radius: 12px;
+    }
+
+/* ...........   VER!!! ..............*/
+
+.img-cliente {
+    height: 400px;
+    width: 30%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.img-productos {
+    width: 25%;
+    display: block;
+    margin: 25px auto;
+    border: 3px solid #1B262C;
+    transition: 1s;
+}
+
+/* ...........   Globales   ..............*/
+
+.img-main {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    transition: 1s;
+}
+
+.img-main:hover,
+img:hover {
+    filter: grayscale(100%);
+}
+
+/* ...........   Footer principal   ..............*/
+
+footer {
+    font-size: 3rem;
+    width: 100%;
+    height: 10vh;
+}
+
+.foot{
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#0B6131;
+}
+
+.foot-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.foot-links a {
+    margin-right: 8px;
+}
+    .fa-2x {
+        margin-right: 1px;
+        color: #94E0B6;
+        transition: 1s;
+    }
+    .fa-2x:hover {
+        color: #94E0B6;
+        font-size: 3em;
+    }
+.foot-copy {
+    align-self: center;
+    color: #FFF;
+}
+
+
+/* ...........   Clientes   ..............*/
+
+.clientes{
+	margin: 0 auto;
+	padding: 0 0.8rem;
+}
+
+/* .titulo1{
+	margin: 0 0 1em;
+	padding: 1rem 0;
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	color: white;
+} */
+
+.clientes-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: strech;
+}
+
+.tarjeta{
+    background: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 5rem;
+    width: 32%;
+}
+
+.tarjeta a{
+    color: #0B6131;
+    text-decoration: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.tarjeta a:hover{
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content{  
+    padding: 1.4em;
+}
+
+.tarjeta-content h2{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.tarjeta-content p{
+    font-size: 95%;
+}
+
+figure{
+    margin: 0;
+}
+
+.thumbnail img{
+    display: block;
+    border:0;
+    width: 100%;
+    height: auto;
+}
+
+/* .........................   Ideas   .................................. */
+
+.ideas{
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.ideas-tabla,
+.ideas-sugerencias{
+    width: 20%;
+    padding: 30px;
+}
+
+.ideas-imagen{
+    width: 30%;
+    padding: 30px;
+}
+.ideas-tabla th,
+.ideas-tabla td,
+.ideas-sugerencias li{
+    font-size: 2rem;
+}
+
+.ideas-sugerencias li{
+    padding:10px;
+}
+
+th,td{
+    border-bottom: 2px solid #0B6131;
+    padding: 5px;
+}
+/* ................................................................... */
+
+@media screen and (min-width: 768px){
+	.tarjeta{
+		width: 32%;
+	}
+}
+@media screen and (max-width: 768px){
+    .tarjeta{
+        width: 49%;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .tarjeta{
+        width: 100%;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiBalcon:Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Cargo las fuentes de Google en línea -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Oxygen+Mono&family=Schoolbell&display=swap" rel="stylesheet">
+    <!-- Íconos -->
+    <script src="https://kit.fontawesome.com/4c636e252b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img src="img/logo.jpg" alt="Logo" class="logo"></a>
+
+        <!-- Menú de navegación -->
+        <ul class="nav-list">
+            <li class="nav-list-li">
+                <a href="ideas.html">Ideas</a>
+            </li>
+            <li class="nav-list-li">
+                <a href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-list-li">
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Mi Balcón - Contacto</h1>   
+
+        <div>
+            <form action="https://formspree.io/f/xdoyeblj" method="post">
+
+                <label>Nombre y Apellido:
+                        <input type="text" name="Nombre_Apellido" placeholder="Ingresa tu nombre" required>
+                </label>
+
+                <label>Email:
+                        <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+                </label>
+
+                <fieldset> 
+                    <legend>Orientación del balcón</legend>
+                    <label class="label-radio">Norte
+                        <input type="radio" name="Orientacion" value="N">
+                    </label>
+                    <label class="label-radio">Sur
+                        <input type="radio" name="Orientacion" value="S">
+                    </label>
+                    <label class="label-radio">Este
+                        <input type="radio" name="Orientacion" value="E">
+                    </label>
+                    <label class="label-radio">Sur
+                        <input type="radio" name="Orientacion" value="O">
+                    </label>
+                    <label class="label-radio">?
+                        <input type="radio" name="Orientacion" value="C" checked>
+                    </label>
+                </fieldset>   
+               
+
+                <label>Mensaje:
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Ingresa tu consulta" required></textarea>
+                </label>
+
+                <label>Quiero una copia:
+                        <input type="checkbox" name="Copia" id="copia" checked>
+                </label>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="iframe-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1401450926564!2d-58.644816685017204!3d-34.65116346751651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8aa67464191%3A0x879199784495118a!2sCDF%2C%20Gdor.%20Inocencio%20Arias%202400%2C%20B1712%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1621374030932!5m2!1ses!2sar"  width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="foot-links">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+
+            <div class="foot-copy">
+                Copyright 2021 &copy; TP Codo a Codo.
+            </div>    
+            
+        </div>
+    </footer>
+</body>
+
+</html>
