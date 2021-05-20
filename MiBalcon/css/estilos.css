@@ -144,23 +144,6 @@ iframe{
     border-radius: 12px;
     }
 
-/* ...........   VER!!! ..............*/
-
-.img-cliente {
-    height: 400px;
-    width: 30%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.img-productos {
-    width: 25%;
-    display: block;
-    margin: 25px auto;
-    border: 3px solid #1B262C;
-    transition: 1s;
-}
-
 /* ...........   Globales   ..............*/
 
 .img-main {
@@ -324,7 +307,7 @@ th,td{
 }
 /* ................................................................... */
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 1024px){
 	.tarjeta{
 		width: 32%;
 	}
